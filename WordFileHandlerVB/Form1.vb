@@ -3,7 +3,8 @@ Imports System.IO
 Imports Microsoft.Office.Interop.Word
 
 Public Class Form1
-    Private Sub btnUpload_Click_1(sender As Object, e As EventArgs) Handles btnUpload.Click
+    Private Sub btnUpload_Click_1(ByVal sender As Object, ByVal e As EventArgs) Handles btnUpload.Click
+        'SBFJSFJKGSKDFSJKD
         If OpenFileDialog.ShowDialog() = DialogResult.OK Then
             Dim filePath As String = OpenFileDialog.FileName
             txtFileName.Text = Path.GetFileName(filePath)
